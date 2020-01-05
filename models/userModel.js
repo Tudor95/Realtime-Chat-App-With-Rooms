@@ -10,5 +10,5 @@ const userSchema = new mongoose.Schema({
     required: [true, "Va rog introduceti o parola pentru user"]
   }
 });
-const User = mongoose.model("Tour", userSchema);
+const User = mongoose.model("User", userSchema);
 models.exports = User;
