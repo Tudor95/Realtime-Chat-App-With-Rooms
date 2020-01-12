@@ -1,0 +1,302 @@
+body {
+  position: relative;
+  width: 1440px;
+  height: 1024px;
+  overflow-y: scroll;
+  background: #ffffff;
+  margin-left: auto;
+  margin-right: auto;
+}
+#logo {
+  position: absolute;
+  width: 1061px;
+  height: 1061px;
+  left: 18%;
+  opacity: 0.2;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: none;
+}
+div#description {
+  position: absolute;
+  width: 937px;
+  height: 296px;
+  left: 400px;
+  top: 150px;
+
+  font-family: Prosto One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 40px;
+
+  /* or 167% */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #2a6ea8;
+  backdrop-filter: blur(4px);
+}
+button {
+  position: absolute;
+  width: 235px;
+  height: 130px;
+  border-radius: 10px;
+  border: none;
+  background-size: 200% 200%;
+}
+button:hover {
+  opacity: 0.9;
+}
+.pop_up {
+  display: none;
+  position: absolute;
+  width: 874px;
+  height: 585px;
+  left: 283px;
+  top: 179px;
+  background: #f2f2f2;
+}
+
+#main_button {
+  background-image: url(Images/btn.png);
+  background-repeat: no-repeat;
+  background-position: left top;
+  left: 630px;
+  top: 450px;
+}
+
+#main_button:active {
+  background-position: right top;
+}
+
+.input_form {
+  position: absolute;
+  width: 644px;
+  height: 60px;
+  background: rgba(210, 211, 211, 0.6);
+
+  opacity: 0.5;
+}
+#user1 {
+  left: 106px;
+  top: 121px;
+}
+#pass1 {
+  left: 106px;
+  top: 242px;
+}
+#login_button {
+  background-image: url(Images/btn.png);
+  background-position: left top;
+  left: 322px;
+  top: 345px;
+}
+#login_button:active {
+  background-position: right top;
+}
+#link_signup {
+  position: absolute;
+  width: 315px;
+  height: 39px;
+  left: 540px;
+  top: 530px;
+
+  font-family: Prosto One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 40px;
+
+  /* or 222% */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-decoration-line: underline;
+
+  color: #2a6ea8;
+}
+.X-exit {
+  position: absolute;
+  width: 110px;
+  height: 74px;
+  left: 810px;
+  top: -35px;
+
+  font-family: Prosto One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 40px;
+
+  /* or 83% */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #2a6ea8;
+}
+.X-exit:hover {
+  color: #ffa600;
+}
+.X-exit:active {
+  color: #ff0000;
+}
+
+#signup_button {
+  background-image: url(Images/btn.png);
+  background-position: left bottom;
+  left: 322px;
+  top: 423px;
+}
+#signup_button:active {
+  background-position: right bottom;
+}
+#email {
+  left: 106px;
+  top: 97px;
+}
+#user2 {
+  left: 106px;
+  top: 216px;
+}
+#pass2 {
+  left: 106px;
+  top: 335px;
+}
+@media screen and (max-width: 480px) {
+  body {
+    width: 360px;
+    height: 600px;
+    overflow-y: none;
+  }
+  #logo {
+    margin-left: -60px;
+
+    width: 360px;
+    height: 360px;
+  }
+  div#description {
+    width: 300px;
+    left: 15px;
+    top: 50px;
+
+    font-size: 17px;
+    line-height: 15px;
+  }
+  button {
+    width: 170px;
+    height: 80px;
+    border-radius: 8px;
+  }
+
+  .pop_up {
+    width: 360px;
+    height: 450px;
+    left: 0px;
+    top: 200px;
+    background: none;
+  }
+
+  #main_button {
+    left: 80px;
+    top: 350px;
+  }
+
+  .input_form {
+    width: 340px;
+    height: 40px;
+  }
+  #user1 {
+    left: 15px;
+    top: 140px;
+  }
+  #pass1 {
+    left: 15px;
+    top: 220px;
+  }
+  #login_button {
+    left: 90px;
+    top: 310px;
+  }
+
+  #link_signup {
+    width: 200px;
+    height: 39px;
+    left: 110px;
+    top: 390px;
+
+    font-size: 15px;
+    line-height: 25px;
+  }
+  .X-exit {
+    display: none;
+  }
+
+  #signup_button {
+    left: 90px;
+    top: 380px;
+  }
+  #email {
+    left: 15px;
+    top: 140px;
+  }
+  #user2 {
+    left: 15px;
+    top: 220px;
+  }
+  #pass2 {
+    left: 15px;
+    top: 300px;
+  }
+  .animate {
+    -webkit-animation: slide 0.5s linear 0s 1 forwards;
+    animation: slide 0.5s linear 0s 1 forwards;
+  }
+
+  @-webkit-keyframes slide {
+    from {
+      top: 0px;
+    }
+    to {
+      top: 230px;
+    }
+  }
+
+  @keyframes slide {
+    from {
+      top: 0px;
+    }
+    to {
+      top: 230px;
+    }
+  }
+}
+@media screen and (min-width: 481px) {
+  .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s;
+  }
+
+  @-webkit-keyframes animatezoom {
+    from {
+      -webkit-transform: scale(0);
+    }
+    to {
+      -webkit-transform: scale(1);
+    }
+  }
+
+  @keyframes animatezoom {
+    from {
+      transform: scale(0);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+}

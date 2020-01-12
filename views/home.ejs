@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ola!</title>
+    <link rel="stylesheet" href="utils\style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Chat App</title>
+    <script defer src="http://localhost:3000/socket.io/socket.io.js"></script>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="logstyle.css" />
+  </head>
+  <body>
+    <!-- // cSpell:disable -->
+    <div id="container">
+      <img id="logo" src="Images/logo.png" />
+      <div id="description">
+        OLA! este aici pentru tine si prietenii tai!<br />
+        Vorbeste cu ei in privat sau in grupul vostru.<br />
+        Faceti schimb de imagini sau comunicati face-to-face cu optiunea<br />
+        de VIDEOCALL !
+      </div>
+      <button id="main_button" onclick="showLI()"></button>
+    </div>
+    <form id="login" class="pop_up animate" action="/user" method="POST">
+      <p class="X-exit" onclick="hide()">
+        X
+      </p>
+      <input
+        id="user1"
+        name="userName"
+        class="input_form"
+        type="text"
+        placeholder="Username/email"
+        required
+      />
+      <input
+        id="pass1"
+        class="input_form"
+        type="password"
+        placeholder="Password"
+        required
+      />
+      <button type="submit" id="login_button" onclick="hide()"></button>
+      <a id="link_signup" onclick="showSU()">Nu ai cont? Sing up!</a>
+    </form>
+    <form id="signup" class="pop_up animate" method="post">
+      <p class="X-exit" onclick="hide()">
+        X
+      </p>
+      <input
+        id="email"
+        class="input_form"
+        type="email"
+        placeholder="Email"
+        required
+      />
+      <input
+        id="user2"
+        class="input_form"
+        type="text"
+        placeholder="Username"
+        required
+      />
+      <input
+        id="pass2"
+        class="input_form"
+        type="password"
+        placeholder="Password"
+        required
+      />
+      <button id="signup_button" onclick="hide()"></button>
+    </form>
+
+    <script type="text/javascript" src="logscript.js"></script>
+    <!-- /* cSpell:enable */-->
+  </body>
+</html>

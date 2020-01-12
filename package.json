@@ -4,11 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "devStart": "nodemon server.js"
+    "devStart": "nodemon server.js",
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bootstrap": "^4.4.1",
     "dotenv": "^8.2.0",
     "ejs": "^2.6.1",
     "express": "^4.17.1",
@@ -26,5 +28,8 @@
     "eslint-plugin-react": "^7.17.0",
     "nodemon": "^1.19.0",
     "prettier": "^1.19.1"
+  },
+  "engines": {
+    "node": ">=10.0.0"
   }
 }
